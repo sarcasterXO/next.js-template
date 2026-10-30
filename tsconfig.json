@@ -1,45 +1,36 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
+		"target": "ES2017",
 		"lib": ["dom", "dom.iterable", "esnext"],
 		"allowJs": true,
+		"skipLibCheck": true,
 		"strict": true,
 		"noEmit": true,
 		"esModuleInterop": true,
-		"module": "preserve",
-		"noImplicitAny": true,
-		"strictNullChecks": true,
-		"noImplicitThis": true,
-		"alwaysStrict": true,
-		"noUnusedLocals": true,
-		"removeComments": true,
-		"outDir": "dist",
-		"sourceMap": true,
-		"allowUnreachableCode": false,
-		"allowUnusedLabels": false,
-		"exactOptionalPropertyTypes": false,
-		"noImplicitOverride": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUnusedParameters": true,
-		"pretty": true,
+		"module": "esnext",
 		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
-		"jsx": "preserve",
-		"verbatimModuleSyntax": true,
-		"incremental": true,
-		"skipLibCheck": true,
-		"checkJs": true,
 		"isolatedModules": true,
-		"paths": {
-			"@/*": ["./*"],
-			"@/types/*": ["./global-types/*"]
-		},
+		"jsx": "react-jsx",
+		"incremental": false,
+		"types": ["node"],
 		"plugins": [
 			{
 				"name": "next"
 			}
-		]
+		],
+		"paths": {
+			"@/*": ["./*"]
+		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "*.js", "*.mjs", ".next/types/**/*.ts"],
+	"include": [
+		"next-env.d.ts",
+		"next.config.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.mts",
+		".next/types/**/*.ts",
+		".next/dev/types/**/*.ts"
+	],
 	"exclude": ["node_modules"]
 }

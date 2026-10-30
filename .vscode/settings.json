@@ -1,16 +1,16 @@
 {
 	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit",
+		"source.fixAll": "never",
+		"source.fixAll.oxc": "explicit",
 		"source.organizeImports": "never"
 	},
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.defaultFormatter": "oxc.oxc-vscode",
 	"editor.formatOnSave": true,
 	"files.eol": "\n",
-	"eslint.validate": ["markdown", "mdx", "javascript", "javascriptreact", "typescript", "typescriptreact"],
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-	"typescript.tsdk": "./node_modules/typescript/lib",
+	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+	"js/ts.tsdk.path": "./node_modules/typescript/lib",
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},
-	"cSpell.words": ["staticity", "mahir", "tailwindcss", "clsx"]
+	"tailwindCSS.experimental.classRegex": [["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*)[\"'`]"]]
 }
